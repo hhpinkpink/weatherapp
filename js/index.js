@@ -1,4 +1,4 @@
-// 获取所有的城市
+﻿// 获取所有的城市
 let citys,weatherobj;
 $.ajax({
 	url:"https://www.toutiao.com/stream/widget/local_weather/city/",
@@ -24,7 +24,7 @@ $.ajax({
 
 	}
 })
-$.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function(){
+$.getScript("https://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function(){
     getFullWeather(remote_ip_info.city);
 });
 // 获取当前城市所有的天气信息
