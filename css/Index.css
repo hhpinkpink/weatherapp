@@ -1,0 +1,273 @@
+body{
+	font-size: 12px;
+	background-color: #F5F5F5;
+}
+header{
+	width: 100%;
+	height: 13.77rem;
+	background-image: url('../img/screen.png'),linear-gradient(#3FBEFF,#49E4FF);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom;
+
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 545879 */
+  src: url('https://at.alicdn.com/t/font_545879_of9y8pepf1v5nrk9.eot ');
+  src: url('https://at.alicdn.com/t/font_545879_of9y8pepf1v5nrk9.eot?#iefix ') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_545879_of9y8pepf1v5nrk9.woff ') format('woff'),
+  url('https://at.alicdn.com/t/font_545879_of9y8pepf1v5nrk9.ttf ') format('truetype'),
+  url('https://at.alicdn.com/t/font_545879_of9y8pepf1v5nrk9.svg#iconfont ') format('svg');
+}
+.dingwei{
+	font-family: iconfont;
+}
+.now_city_box{
+	font-size: 0.39rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1.6rem;
+}
+.now_air_box{
+	width: 2.1rem;
+	height: 1.26rem;
+	background-color: #F1AB62;
+	border-radius: .2rem;
+	margin-left: 0.27rem;
+	padding-top: 0.2rem;
+}
+.now_air_box span{
+	display: block;
+	/* 设置盒子竖排 */
+	text-align: center;
+	color: #fff;
+	font-size: 0.39rem;
+}
+.now_temp{
+	font-size: 1.29rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	margin-top: .52rem;
+	padding-left: .5rem;
+	
+}
+.now_weather{
+	font-size: .48rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	margin-top: .46rem;
+}
+.now_wind_box{
+	font-size: .32rem;
+	color: #fff;
+	text-align: center;
+	margin-top: .34rem;
+
+}
+.now_wind_box span{
+	padding-right: .16rem;
+}
+.now_warmming{
+	font-size: .41rem;
+	color:#fff;
+	text-align: center;
+	/* 居中 */
+	margin-top: 1.31rem;
+}
+.next{
+	width: 100%;
+	height: 2.93rem;
+	border-bottom: .03rem solid green;
+	padding: .72rem 0rem;
+	overflow: hidden;
+	background-color: #fff;
+	/* 没有撑开，加overflow:hidden; */
+}
+.next_box{
+	width:50%;
+	height: 100%;
+	float: left;
+	/* 设置并列的盒子横排 */
+	padding: 0 0.58rem;
+	background-color: #fff;
+}
+.next_box1{
+	border-right: .03rem solid green;
+}
+.next_date,.today_weather,.tomorrow_weather{
+	float: left;
+	/*  */
+}
+.next_temp,.today_img,.tomorrow_img{
+	float: right;
+}
+.next_top,.next_bottom{
+	overflow: hidden;
+}
+.today_img,.tomorrow_img{
+	width: .78rem;
+	height: .78rem;
+}
+.next_bottom{
+	margin-top: .36rem;
+}
+.hours{
+	width: 100%;
+	height: 3.9rem;
+	background-color: #fff;
+	margin-top: .27rem;
+	/* margin设置对象四边的外延边距，即模块与模块的空隙 */
+	border-bottom: 0.03rem solid #fff;
+	border-top: 0.03rem solid #fff;
+	/* border设置边框属性，可以设置的属性分别（按顺序）
+	border-bottom-width,border-bottom-style,border-bottom-color */
+	overflow: hidden;/* 对于盒子超出部分隐藏 */
+	padding: 0.88rem 0;
+	/* padding是内容与边框的空隙 */
+}
+.hours_content{
+	height: 100%;
+	background-color: pink;
+	display: flex;
+	overflow-x: auto;
+}
+.hours_content li{
+	height: 100%;
+	width: 2rem;
+	padding: 0 .6rem;
+	background-color: green;
+	display: flex;
+	/* 弹性布局 */
+	flex-wrap: wrap; 
+	align-content: space-between;
+	/* 两端对齐 */
+	flex-shrink: 0;
+
+}
+.hours_img{
+	width: .58rem;
+	height: .58rem;
+
+}
+.week{
+	width: 100%;
+	height: 11.16rem;
+	background-color: #fff;
+	margin-top: .27rem;
+	border-bottom: 0.03rem solid #e4e4e4;
+	border-top: 0.03rem solid #e4e4e4;
+	overflow: hidden;
+	/* 整个部分超出隐藏 */
+	/* overflow属性规定，当一个块元素容器的内容溢出元素的
+	盒模型边界时是否对其进行剪裁 */
+	/* overflow：visible、hidden、auto、scroll、单独设置X和Y方向的滚动条样式其值
+	hidden：不显示超过对象尺寸的内容
+	scroll：总是显示滚动条 */
+	padding: 0.88rem 0;
+	/*padding内容与边框的空隙  */
+}
+.week_content{
+	height: 100%;
+	background-color: pink;
+	display: flex;
+	overflow-x: scroll;
+	/* 内容超出部分滚动 */
+}
+.week_content li{
+	height: 100%;
+	width: 2rem;
+	background-color: green;
+	display: flex;
+	/* 弹性布局 */
+	flex-wrap: wrap; 
+	align-content: space-between;
+	/* 两端对齐 */
+	justify-content: center;
+	flex-shrink: 0;
+	/* 不要缩放 */
+}
+.week_img{
+	width: 1.5rem;
+	height:1.5rem;
+
+}
+.week_content li span{
+	display: block;
+	width: 2rem;
+	text-align: center;
+}
+.citys{
+	width: 100vw;
+	/* 宽度一屏是100%或者vw */
+	height: 100vh;
+	/* 一屏大小，宽度100%可以实现，但是高度不能实现 */
+	background-color: #f6f6f6;
+	position: fixed;
+	/* 多个重叠的布局用定位 */
+	top: 0;
+	left: 0;
+	display: none;
+}
+.search_box{
+	height: 1.28rem;
+	width: 100vw;
+	background-color: #fff;
+	padding: 0 .3rem;
+	display: flex;
+	flex-wrap: wrap;
+	/*  */
+	justify-content: space-between;
+	/* 水平方向两端对齐 */
+	align-items: center;
+	/* 垂直方向 一行居中对齐 */
+}
+.search{
+	width: 9rem;
+	height: .87rem;
+	background-color: #e2e2e2;
+	border: 0;
+	padding-left: 0.3rem;
+	/* 搜索内容距离边框的距离用padding,在盒子上设置 */
+	border-radius: 0.1rem;
+	/* 边框圆角，设置圆用百分比或者半径 */
+	font-size: 0.5rem;
+}
+.confirm{
+	font-size: 0.5rem;
+	color: #7659ff;
+}
+.citys_box{
+	width: 100%;
+	height: 90vh;
+	overflow-y: scroll;
+	padding: 0 0.3rem;
+}
+.citys_title{
+	font-size: 0.5rem;
+	color: #999;
+	line-height: 0.8rem;
+}
+.citys_list li{
+	width: 2.93rem;
+	height: 0.84rem;
+	background-color: #fff;
+	font-size: 0.44rem;
+	text-align: center;
+	/* 文字水平居中 */
+	line-height: 0.84rem;
+	/* 文字垂直居中 */
+	border: 0.03rem solid #e0e0e0;
+	border-radius: 0.1rem;
+	float: left;
+	margin-bottom: 0.4rem;
+	margin-right: 0.4rem;
+}
+::-webkit-scrollbar{
+	height: 0;
+	/* 隐藏掉滚动框 */
+}
+.citys_box section{
+	overflow: hidden;
+}
